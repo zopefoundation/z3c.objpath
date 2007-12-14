@@ -1,13 +1,6 @@
 ObjectPath
 ==========
 
-Let's get the ObjectPath object from somewhere. We could have it registered
-as a utility and look it up that way, but in this case we'll just import
-it and instantiate it::
-
-  >>> from z3c.objpath.path import ObjectPath
-  >>> objpath = ObjectPath()
-
 We'll have a simple item::
 
   >>> class Item(object):
@@ -43,46 +36,51 @@ Now let's create a structure::
   >>> f = e['f'] = Item()
   >>> g = b['g'] = Item()
 
+We will now exercise two functions, ``path`` and ``resolve``, which
+are inverses of each other::
+
+  >>> from z3c.objpath.path import path, resolve
+
 We can create a path to ``a`` from ``root``::
 
-  >>> objpath.path(root, a)
+  >>> path(root, a)
   '/root/data/a'
 
 We can also resolve it again::
 
-  >>> objpath.resolve(root, '/root/data/a')
+  >>> resolve(root, '/root/data/a')
   <Container a>
 
 We can also create a path to ``a`` from ``data``::
 
-  >>> objpath.path(data, a)
+  >>> path(data, a)
   '/data/a'
 
 And resolve it again::
 
-  >>> objpath.resolve(data, '/data/a')
+  >>> resolve(data, '/data/a')
   <Container a>
 
 We can make a deeper path::
 
-  >>> objpath.path(root, f)
+  >>> path(root, f)
   '/root/data/a/e/f'
 
 And resolve it::
 
-  >>> objpath.resolve(root, '/root/data/a/e/f')
+  >>> resolve(root, '/root/data/a/e/f')
   <Item f>
 
 We get an error if we cannot construct a path::
 
-  >>> objpath.path(e, a)
+  >>> path(e, a)
   Traceback (most recent call last):
    ...
   ValueError: Cannot create path for <Container a>
 
 We also get an error if we cannot resolve a path::
 
-  >>> objpath.resolve(root, '/root/data/a/f/e')
+  >>> resolve(root, '/root/data/a/f/e')
   Traceback (most recent call last):
    ...
   ValueError: Cannot resolve path /root/data/a/f/e

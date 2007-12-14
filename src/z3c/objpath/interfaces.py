@@ -1,30 +1,27 @@
 from zope.interface import Interface
 
 class IObjectPath(Interface):
-    """Path representation to objects.
+    """Path representation for objects.
     """
+    def path(obj):
+        """Give the path representation of obj.
 
-    def path(root, obj):
-        """Give the path representation of obj relative to root.
-
-        root - should be the root that the object is contained in.
         obj - object in a hierarchy of IContainer objects.
 
-        The path is defined relatively to the root.
+        The path is defined by the application and may be relative
+        to the application root.
 
         Returns the path.
         
         If no path to the object can be made, raise a ValueError.
         """
 
-    def resolve(root, path):
-        """Given a path resolve it from root.
+    def resolve(path):
+        """Given a path resolve to an object.
 
-        root - should be the root that the object is contained in.
-        path - a path to an object relative to the root.
+        path - a path as created with path()
 
         Returns the object that the path referred to.
 
         If the path cannot be resolved to an object, raise a ValueError.
         """
-
