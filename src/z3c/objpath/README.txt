@@ -1,6 +1,20 @@
 ObjectPath
 ==========
 
+This package contains two things::
+
+* the ``z3c.objpath.interfaces.IObjectPath`` interface.
+
+* some helper functions to construct (relative) object paths, in
+  ``z3c.objpath.path``.
+
+The idea is that a particular application can implement a utility that
+fulfills the ``IObjectPath`` interface, so that it is possible to
+construct paths to objects in a uniform way. The implementation may be
+done with ``zope.traversing``, but in some cases you want
+application-specific object paths. In this case, the functions in
+``z3c.objpath.path`` might be useful.
+
 We'll have a simple item::
 
   >>> class Item(object):
