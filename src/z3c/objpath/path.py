@@ -19,6 +19,8 @@ def resolve(root, path):
     steps = path.split('/')
     assert steps[0] == ''
     obj = root
+    if steps[1] == '':
+        return root
     assert steps[1] == root.__name__
     steps = steps[2:]
     for step in steps:
