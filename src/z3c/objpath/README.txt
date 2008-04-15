@@ -1,7 +1,7 @@
 ObjectPath
 **********
 
-This package contains two things::
+This package contains two things:
 
 * the ``z3c.objpath.interfaces.IObjectPath`` interface.
 
