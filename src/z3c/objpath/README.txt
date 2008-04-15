@@ -1,5 +1,5 @@
 ObjectPath
-==========
+**********
 
 This package contains two things::
 
@@ -53,7 +53,7 @@ Now let's create a structure::
 We will now exercise two functions, ``path`` and ``resolve``, which
 are inverses of each other::
 
-  >>> from z3c.objpath.path import path, resolve
+  >>> from z3c.objpath import path, resolve
 
 We can create a path to ``a`` from ``root``::
 

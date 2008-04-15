@@ -1,17 +1,28 @@
 from setuptools import setup, find_packages
-import sys, os
+import os
+
+def read(*rnames):
+    return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
+
+long_description = (
+    read('src', 'z3c', 'objpath', 'README.txt')
+    + '\n' +
+    read('CHANGES.txt')
+    + '\n' +
+    'Download\n'
+    '********\n'
+    )
 
 setup(
     name='z3c.objpath',
-    version='0.1dev',
-    description="Paths to to objects.",
-    long_description="""""",
+    version='1.0dev',
+    description="Generate and resolve paths to to objects.",
+    long_description=long_description,
     classifiers=[],
     keywords='',
     author='Martijn Faassen',
     author_email='faassen@startifact.com',
-    url='http://dev.inghist.nl/eggs/',
-    license='',
+    license='ZPL',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     include_package_data=True,

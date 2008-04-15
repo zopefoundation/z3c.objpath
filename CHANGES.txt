@@ -1,0 +1,7 @@
+z3c.objpath changes
+*******************
+
+1.0 (unreleased)
+================
+
+Initial public release.
