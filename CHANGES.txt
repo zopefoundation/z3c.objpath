@@ -4,9 +4,9 @@ z3c.objpath changes
 1.1 (unreleased)
 ================
 
-* ...
+* Added a `test` extra, as test require ``zope.testing``.
 
 1.0 (2008-04-15)
 ================
 
-Initial public release.
+* Initial public release.
