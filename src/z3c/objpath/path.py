@@ -2,6 +2,7 @@
 implementation of IObjectPath interface.
 """
 
+
 def path(root, obj):
     steps = []
     orig_obj = obj
@@ -14,6 +15,7 @@ def path(root, obj):
         raise ValueError("Cannot create path for %s" % orig_obj)
     steps.reverse()
     return '/' + '/'.join(steps)
+
 
 def resolve(root, path):
     steps = path.split('/')
@@ -29,5 +31,3 @@ def resolve(root, path):
         except KeyError:
             raise ValueError("Cannot resolve path %s" % path)
     return obj
-
-        

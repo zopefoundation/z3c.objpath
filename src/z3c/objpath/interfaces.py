@@ -1,5 +1,6 @@
 from zope.interface import Interface
 
+
 class IObjectPath(Interface):
     """Path representation for objects.
     """
@@ -12,7 +13,7 @@ class IObjectPath(Interface):
         to the application root.
 
         Returns the path.
-        
+
         If no path to the object can be made, raise a ValueError.
         """
 

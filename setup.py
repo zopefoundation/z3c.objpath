@@ -1,6 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
+
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
@@ -32,8 +33,8 @@ setup(
         'setuptools',
         'zope.interface',
         ],
-    extras_require = dict(
-        test = [
+    extras_require=dict(
+        test=[
             'zope.testing',
             ],
         ),
