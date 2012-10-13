@@ -1,7 +1,7 @@
 z3c.objpath changes
 *******************
 
-1.1 (unreleased)
+1.1 (2012-10-13)
 ================
 
 * Add name space declaration for `z3c`.
