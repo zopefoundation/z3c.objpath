@@ -4,6 +4,8 @@ z3c.objpath changes
 1.1 (unreleased)
 ================
 
+* Add name space declaration for `z3c`.
+
 * Added a `test` extra, as test require ``zope.testing``.
 
 1.0 (2008-04-15)
