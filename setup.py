@@ -41,10 +41,5 @@ setup(
         'setuptools',
         'zope.interface',
     ],
-    extras_require=dict(
-        test=[
-            'zope.testing',
-            ],
-        ),
     entry_points={},
     )
