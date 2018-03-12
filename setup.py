@@ -1,9 +1,13 @@
-from setuptools import setup, find_packages
+# coding=utf-8
+from setuptools import find_packages
+from setuptools import setup
+
 import os
 
 
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
+
 
 long_description = (
     read('src', 'z3c', 'objpath', 'README.txt')
@@ -19,7 +23,11 @@ setup(
     version='1.2dev',
     description="Generate and resolve paths to to objects.",
     long_description=long_description,
-    classifiers=[],
+    classifiers=[
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 3',
+    ],
     keywords='',
     author='Martijn Faassen',
     author_email='faassen@startifact.com',
@@ -32,7 +40,7 @@ setup(
     install_requires=[
         'setuptools',
         'zope.interface',
-        ],
+    ],
     extras_require=dict(
         test=[
             'zope.testing',
