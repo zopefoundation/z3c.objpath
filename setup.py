@@ -10,9 +10,9 @@ def read(*rnames):
 
 
 long_description = (
-    read('src', 'z3c', 'objpath', 'README.txt')
+    read('src', 'z3c', 'objpath', 'README.rst')
     + '\n' +
-    read('CHANGES.txt')
+    read('CHANGES.rst')
     + '\n' +
     'Download\n'
     '********\n'
