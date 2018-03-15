@@ -10,9 +10,9 @@ def read(*rnames):
 
 
 long_description = (
-    read('src', 'z3c', 'objpath', 'README.txt')
+    read('src', 'z3c', 'objpath', 'README.rst')
     + '\n' +
-    read('CHANGES.txt')
+    read('CHANGES.rst')
     + '\n' +
     'Download\n'
     '********\n'
@@ -20,17 +20,23 @@ long_description = (
 
 setup(
     name='z3c.objpath',
-    version='1.2dev',
+    version='1.2.dev0',
     description="Generate and resolve paths to to objects.",
     long_description=long_description,
     classifiers=[
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'License :: OSI Approved :: Zope Public License',
     ],
-    keywords='',
+    keywords='Zope',
     author='Martijn Faassen',
     author_email='faassen@startifact.com',
+    url='https://github.com/zopefoundation/z3c.objpath',
     license='ZPL',
     packages=find_packages('src'),
     package_dir={'': 'src'},
