@@ -4,8 +4,7 @@ z3c.objpath changes
 1.2 (unreleased)
 ================
 
-* Make imports Python 3 compatible
-  [ale-rt]
+* Add support for Python 3.5, 3.6, PyPy and PyPy3.
 
 1.1 (2012-10-13)
 ================
