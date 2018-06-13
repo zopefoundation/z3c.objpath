@@ -85,6 +85,11 @@ And resolve it::
   >>> resolve(root, '/root/data/a/e/f')
   <Item f>
 
+The path `'/'` leads to the root object::
+
+  >>> resolve(root, '/')
+  <Container root>
+
 We get an error if we cannot construct a path::
 
   >>> path(e, a)
