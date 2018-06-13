@@ -6,17 +6,15 @@ import os
 
 
 def read(*rnames):
-    return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
+    with open(os.path.join(os.path.dirname(__file__), *rnames)) as f:
+        return f.read()
 
 
 long_description = (
     read('src', 'z3c', 'objpath', 'README.rst')
     + '\n' +
     read('CHANGES.rst')
-    + '\n' +
-    'Download\n'
-    '********\n'
-    )
+)
 
 setup(
     name='z3c.objpath',
@@ -48,4 +46,4 @@ setup(
         'zope.interface',
     ],
     entry_points={},
-    )
+)
