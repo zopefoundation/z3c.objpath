@@ -18,7 +18,7 @@ long_description = (
 
 setup(
     name='z3c.objpath',
-    version='1.2.dev0',
+    version='1.2',
     description="Generate and resolve paths to to objects.",
     long_description=long_description,
     classifiers=[
