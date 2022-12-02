@@ -4,9 +4,7 @@ z3c.objpath changes
 1.3 (unreleased)
 ================
 
-* Add support for Python 3.10, 3.11.
-
-- Add support for Python 3.7, 3.8 and 3.9.
+- Add support for Python 3.7, 3.8, 3.9, 3.10, 3.11.
 
 
 1.2 (2018-06-14)
