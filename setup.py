@@ -1,8 +1,8 @@
 # coding=utf-8
+import os
+
 from setuptools import find_packages
 from setuptools import setup
-
-import os
 
 
 def read(*rnames):
@@ -30,6 +30,8 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy',
         'License :: OSI Approved :: Zope Public License',

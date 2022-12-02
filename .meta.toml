@@ -2,7 +2,7 @@
 # https://github.com/zopefoundation/meta/tree/master/config/pure-python
 [meta]
 template = "pure-python"
-commit-id = "5b60e8235223c5c73427d4cdf66be5fb2cce3cea"
+commit-id = "d8ee00613a60c98a8d2227b0564403d0e447741a"
 
 [python]
 with-pypy = true
@@ -10,6 +10,7 @@ with-legacy-python = true
 with-sphinx-doctests = false
 with-windows = false
 with-future-python = false
+with-macos = false
 
 [coverage]
 fail-under = 100
@@ -18,6 +19,13 @@ fail-under = 100
 use-flake8 = true
 testenv-deps = [
     "zope.testrunner",
+    ]
+
+[flake8]
+additional-config = [
+    "# F401 imported but unused",
+    "per-file-ignores =",
+    "    src/z3c/objpath/__init__.py: F401",
     ]
 
 [manifest]

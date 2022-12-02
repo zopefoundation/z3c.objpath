@@ -1,14 +1,15 @@
-from zope.interface.verify import verifyObject
 import doctest
 import unittest
+
+from zope.interface.verify import verifyObject
 
 
 class ObjectPathTests(unittest.TestCase):
     """Testing .path.*"""
 
     def test_module_provides_interface(self):
-        from .interfaces import IObjectPath
         from . import _path
+        from .interfaces import IObjectPath
         self.assertTrue(verifyObject(IObjectPath, _path))
 
 

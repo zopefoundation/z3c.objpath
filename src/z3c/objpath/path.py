@@ -1,8 +1,10 @@
 """This module contains some functions that may be helpful in the
 implementation of IObjectPath interface.
 """
-from z3c.objpath.interfaces import IObjectPath
 import zope.interface
+
+from z3c.objpath.interfaces import IObjectPath
+
 
 zope.interface.moduleProvides(IObjectPath)
 
