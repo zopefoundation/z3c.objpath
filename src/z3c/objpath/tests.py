@@ -21,7 +21,7 @@ def test_suite():
     )
 
     return unittest.TestSuite([
-        unittest.makeSuite(ObjectPathTests),
+        unittest.defaultTestLoader.loadTestsFromTestCase(ObjectPathTests),
         doctest.DocFileSuite(
             'README.rst', optionflags=optionflags)
     ])
