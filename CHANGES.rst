@@ -1,10 +1,10 @@
 z3c.objpath changes
 *******************
 
-1.4 (unreleased)
+2.0 (unreleased)
 ================
 
-- Nothing changed yet.
+* Drop support for Python 2.7, 3.5, 3.6.
 
 
 1.3 (2022-12-02)

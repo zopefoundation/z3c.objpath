@@ -1,4 +1,3 @@
-# coding=utf-8
 import os
 
 from setuptools import find_packages
@@ -18,15 +17,11 @@ long_description = (
 
 setup(
     name='z3c.objpath',
-    version='1.4.dev0',
+    version='2.0.dev0',
     description="Generate and resolve paths to to objects.",
     long_description=long_description,
     classifiers=[
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
@@ -46,6 +41,7 @@ setup(
     namespace_packages=['z3c'],
     include_package_data=True,
     zip_safe=False,
+    python_requires='>=3.7',
     install_requires=[
         'setuptools',
         'zope.interface',
