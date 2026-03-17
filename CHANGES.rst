@@ -4,7 +4,7 @@ z3c.objpath changes
 3.1 (unreleased)
 ================
 
-- Nothing changed yet.
+* Move package metadata from setup.py to pyproject.toml.
 
 
 3.0 (2025-04-14)
