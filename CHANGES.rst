@@ -6,6 +6,10 @@ z3c.objpath changes
 
 * Move package metadata from setup.py to pyproject.toml.
 
+* Add support for Python 3.14.
+
+* Drop support for Python 3.9.
+
 
 3.0 (2025-04-14)
 ================
