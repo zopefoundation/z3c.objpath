@@ -1,6 +1,12 @@
 z3c.objpath changes
 *******************
 
+3.2 (unreleased)
+================
+
+- Nothing changed yet.
+
+
 3.1 (2026-11-26)
 ================
 
