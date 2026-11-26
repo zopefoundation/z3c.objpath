@@ -1,7 +1,7 @@
 z3c.objpath changes
 *******************
 
-3.1 (unreleased)
+3.1 (2026-11-26)
 ================
 
 * Add support for Python 3.15.
